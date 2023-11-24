@@ -8,5 +8,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // Aquí puedes realizar alguna lógica adicional, como enviar datos a un servidor
 
     // Redirigir a personas.html
-    window.location.href = "/pages/personas.html";
+    window.location.href = "../pages/personas.html";
 });
