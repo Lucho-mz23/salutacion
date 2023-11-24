@@ -1,6 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; 
+  box-sizing: border-box; 
+}
+  body{
+    display: flex;
+   flex-direction: column;
+   min-width: 100vh;
+    /*background-color: #444444;*/
+  }
+
 /* styles LOGIN*/
 
-body {
+#body-login{
     margin: 0;
     padding: 0;
     background: url(/img/IMG_20160713_115754022.jpg) no-repeat center top;
@@ -95,3 +109,41 @@ body {
     }
 
     /* styles PERSONAS*/
+
+#app{
+  background-color: rgba(244, 94, 0, 0.815);
+  color: #444444;
+}
+.boton{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin-right: 75%;
+ 
+}
+/* FOOTER */
+/*.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgb(0, 0, 0);  
+  margin-top: auto;
+  
+}
+
+.footer-siganos{
+  color: white;
+}
+
+.footer-list{
+  display: flex;
+  row-gap: 0.25rem;
+  list-style:none ;
+  align-items: center;
+ 
+}
+.footer-BA{
+  color:white;
+}
+*/

@@ -7,14 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <!-- place navbar here -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../pages/personas.html">
+                    <img src="/img/BASILICA.png" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-top">
+                    SESEGBALU
+                </a>
+            </div>
     </header>
     <main>
         <div id="app" class="container">
+            <br><br>
             <h1>Personas - Proximo cumpelaños</h1>
             <br><br>
             <div v-if="error">
@@ -27,7 +40,7 @@
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table table-dark table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
@@ -60,9 +73,27 @@
             </div>
         </div>
     </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
+    <!--<footer class="footer">
+        <div>
+          <h2 class="footer-siganos">Siganos</h2>
+        </div>
+        <div>
+          <nav class="footer-list">
+            <li class="icon-redes"><a href="https://www.facebook.com/"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAS1JREFUWEftmOFtwjAUhO8mKEzQbgAbwAa0EwAbsAEwCYwAE8AGbTeADdjg0JMCMibghBATIT8pf5L4+cv5/GyHaFiwYTxIQKERyVVI0jeATqhxxec7AGuSBzfPFZCkEYBFxc6KNv8huQoBzQBMi2as+N6cpPV3jjyF3hboH8AfAPNKC0A3uz4cQaIoZCATklt/OCXZvV5MoL2p4M+cE8ArgMYkl7eM/gqgtquOpC8AQwfQSordO0W9HiJ5MWslWY0Z3CkN0YF8E/tsCSi6QleS31tKJFmR/KzT1GWB5AE/3UOFgSTZ0vHbJKA+gE3dQBf5c+pQdFMnoFIbwjRkIbmSQkkhU6DKQfEBDxU6KNqRxcq8rT2lwj/0ZR/nblndfLu8/Xf6+xGSPCkUUugIfTb2JcNKVQUAAAAASUVORK5CYII=" /></a>
+            </li>
+            <li class="icon-redes"><a href="https://twitter.com/tuiter"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAg9JREFUWEftV+8xw0EU3K2ADugAFaACOiAVoAJUgA6oQFRACVSADqhgzZq7TMRd7l0kJh/yZnwwv3fv9vbt+xNiyYxLhgcrQK2MrBj6d4YkbQM4AbAJYA/AM4AnADck3zIgSev2IenvI/uVMknfgUjetl4z+V3SKYCrKecGAAzqAMAxgJ1xkD5XApSDDnpASToEcN/xiDOS15P+JUCmdzc5hkAl+l8BOA0RM/tmasdMkfzIh0qAhonS7OP/DWx0qJCqXnYc4jNJo6mhkg4M5pTkXen5ki4AnEeoST4viZkfYGoacmU8VoIbmBlzxYyCSbIWXFlRuyTpR/yyYmOU5BwfBaIbVE6lHxK1oqBrDFkPFraZyOKOXhT12yfpO9oMScqi9sujVRMFkv26APUKtBcMSFZnaK1Tu6csyh5IWhZFq4l6kSxVBV0UdYYtybPGwDbmSJWboQdqtclWcynJZbyWQHmCz8Oq/ScHbwGqNchZwDXZmZoyf+xokBGAoUHdXGEljU//yMUln6mVNX6gCSgxZT35z+W61YnKg9QLX1XI3YASKFecB2hP9+4CE9GQq8uMGIxX2x7zquKVJcRMscpSqftyl/uspf6edp3i8Gy9qDY6vKS5MRpY1Jye29KeHA0QSVkWc9518jriy50K78XeiYaTvx56QMwk6lkv6D0XKvveoH/xXwFqsbdiqMXQFypEsyWXPLhaAAAAAElFTkSuQmCC" /></a>
+            </li>
+            <li class="icon-redes"><a href="https://www.instagram.com/"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAjpJREFUWEftV9tRwzAQ3K0AqACoAKgAqACoAKgAqACogFABdEBSAUkFpISkA6jgmPWcM8KRLcV2MvngZph8IOnWe3svYsuMW4YH/4BSEclmyMyOAewD0O8qNgUwJ6nfpCUBmdk9gEcAu8nXmg98A3gi+dp0rBaQmQnAB4CzjkCq18cArkgK4JI1AdLF057BlM+NSZ5nA/IwvawJTPnsLcn3qo8oQ2Y2cwH3gekWgMIjLYaMz0geJgF5Nn31gQTAiOSl3jIz/UqToZ1Us2+JITOTiD8zAP0AEOVDkmMzO/CSoPs3AHYATEmeOCAxVJXBue6GvmKAnjzNmzCN5LQuUxzcEMARAIVff7FsfSYpfwtrA2gRBv9yFcoL18kkDIGZqRgKVJ11BqQwHYgZr1NvAAqNBCZmlEE6I7BNeuwM6JWktCCRyrGYiZl0deXnBgDuas51BlSIMOPL5b/IIDOTwMVkzDoD2vNQxDKm6vCB5CABfqOAikq8bkBbF7JcUYfn1ipq9aTDIO3l7LoiHs07mns2kvbyvWgHQWEsp0j9bzEZbqIwlmTIqYYstYQlcyEr1VPjblaW5TZXhU/NVc1x7qjUJgSiKJ4ZltVcU+U+w0/2kfT44broc0CrQ6dNRCPLH6ubGGPDVPZnZx4sKnkWIGdpnUO+xpToNpNag9TR+948JhpZVl6DSip9Fha12lq7mDJxEAtT+Ghycw2AKfu0PK66OKpmacPoZ5XuQkmbu9kMtXm8zZ1/QCnWfgE14CA0u0ZzWgAAAABJRU5ErkJggg==" /></a>
+            </li>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-BA">© Lucho Muñoz</p>
+        </div>
+      </footer>-->
     <script>
         <!--Link de Bootstrap-->
         src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
