@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 100vh;
-  
+ 
 }
 
 /* styles LOGIN*/
@@ -125,6 +125,12 @@ body {
   justify-content: space-between;
   padding-bottom: 30px;
   margin-right: 75%;
+
+}
+.img {
+  display: flex;
+  justify-content: right;
+  padding-top: 1%;
 
 }
 

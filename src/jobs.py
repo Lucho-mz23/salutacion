@@ -19,7 +19,7 @@ class UtilsMail():
         for persona in personas:
             # Crear el mensaje de correo electrónico
             subject = '¡Feliz cumpleaños!'
-            message = f'Estimado/a {persona.nombre},\n\nEn este día especial, queremos desearte un feliz cumpleaños en nombre de todo el equipo . Que este nuevo año de vida esté lleno de éxitos, alegrías y oportunidades para alcanzar tus metas.\n\n¡Feliz cumpleaños y que tengas un día maravilloso!\n\nAtentamente, Los Muchachos!'
+            message = f'Estimado/a {persona.nombre},\n\nEn este día especial, queremos desearte un feliz cumpleaños en nombre de todo el equipo . Que este nuevo año de vida esté lleno de éxitos, alegrías y oportunidades para alcanzar tus metas.\n\n¡Feliz cumpleaños y que tengas un día maravilloso!\n\nAtentamente, !'
             msg = MIMEMultipart()
             msg['From'] = smtp_username
             msg['To'] = persona.mail
